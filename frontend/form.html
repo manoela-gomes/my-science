@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyScience</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Science and Art" name="keywords">
+    <meta content="Science and Art" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small class="px-3"></small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Topbar End -->
+<div style="margin:5%;width:80%" class="container-fluid p-0"> 
+    <div class="row">
+    </div>
+    <form style="width:80%" action="result.html" method="post" >
+    <label for="age">How old are you?</label><br>
+    <input type="text" id="age"  value="23"><br>
+    <label for="gender">What's you gender?</label><br>
+    <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+        <option value="nd1">I prefer not to</option>
+    </select><br>
+    <label for="ethnicity">What's you ethnicity?</label><br>
+    <select name="ethnicity" id="ethnicity">
+        <option value="Black"> Black</option>
+        <option value="Asian"> Asian</option>
+        <option value="Indigenous"> Indigenous</option>
+        <option value="nd2">I prefer not to declare.</option>
+    </select>
+    <hr>
+    <label for="arts">What's your favourite painter?</label><br>
+    <select name="arts" id="arts">
+        <option value="Van Gogh"> Van Gogh</option>
+        <option value=" Matisse"> Matisse</option>
+        <option value="Da Vinci"> Da Vinci</option>
+        <option value="Picasso"> Picasso</option>
+    </select>
+    <label for="colour">What's your favourite colour?</label><br>
+    <select name="colour" id="colour">
+        <option value="Red"> Red</option>
+        <option value="Blue"> Blue</option>
+        <option value="Yellow"> Yellow</option>
+        <option value="nd4">I like all colors :)</option><br>
+    </select>
+    <hr>
+    <label for="text">Copy and paste a text about the NASA project which you want to better understand.</label><br>
+    <input style="width:80%;height:5%;" type="text" id="text" name="age" value=""> <br>
+
+    <button class="btn btn-primary" id="submit" style="margin-left:5%;width:50%;height:5%;margin:5%" onclick="handleSignupFormSubmit(event)" type="submit">
+        Submit
+     </a>
+  </form>
+</div>
+<!-- Footer Start -->
+    <div class="container-fluid position-relative  bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5" >
+            <div class="row">
+                <div class="col-md-4 mb-5" style="margin:20px">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0"> MyScience ® </a>All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        function handleSignupFormSubmit(e) { 
+            e.preventDefault();
+            //e = e || window.event; 
+            //console.log(e) ;
+            // prevent default browser behaviour 
+            const age = document.getElementsByTagName('input')[0].value;
+            var select = document.getElementById('gender');
+            const gender= select.options[select.selectedIndex].value
+            var select = document.getElementById('ethnicity');
+            const ethnicity=  select.options[select.selectedIndex].value
+            var select = document.getElementById('arts');
+            const arts = select.options[select.selectedIndex].value
+            var select = document.getElementById('colour');
+            const colour = select.options[select.selectedIndex].value
+            const text = document.getElementsByTagName('input')[1].value;
+            console.log(text)
+            var data = {
+            'age':age,
+            "gender":gender,
+            'ethnicity': ethnicity,
+            'arts': arts,
+            'colour': colour,
+            'text': text}
+
+
+
+            axios.default.post("http://localhost:8080/summarize/",data).then((resp)=>{
+                window.sessionStorage.setItem("resp1", JSON.stringify(resp.data));
+                axios.default.post("http://localhost:8080/dalle/",data).then((resp)=>{
+                     window.sessionStorage.setItem("resp2", resp.data);
+                     window.location.href="result.html"
+
+                    })
+            })
+}
+    </script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
