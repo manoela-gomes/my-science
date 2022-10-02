@@ -2,7 +2,7 @@ from dalle2 import Dalle2
 import openai
 import sys
 
-dalle = Dalle2('sess-7OtBNksLtCVOjxs1jcFBApNpXe7Oy2uCAf60JCiz')
+dalle = Dalle2('sess-Ck8LKXnojnNs06VtFIeiXGmENBHl56lZBNsD92l3')
 
 age= sys.argv[1]
 gender= sys.argv[2]
