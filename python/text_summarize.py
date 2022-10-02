@@ -1,7 +1,8 @@
 import openai
 import sys
 
-openai.api_key = "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"
+openai.api_key = "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"
+
 age= sys.argv[1]
 gender= sys.argv[2]
 ethnicity= sys.argv[3]
@@ -18,5 +19,6 @@ response = openai.Completion.create(
   frequency_penalty=0.0,
   presence_penalty=0.0
 )
+
 print(response)
 
