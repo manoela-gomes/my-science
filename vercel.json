@@ -8,6 +8,5 @@
     "routes":{
         "src":"/",
         "dest":"/"
-    },
-    "buildCommand":"node app.js"
+    }
   }
