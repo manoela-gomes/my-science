@@ -1,8 +1,7 @@
 {
   "success_url": "/",
   "env": {
-    "APP_ENV": "prod",
-    "CORS_ALLOW_ORIGIN": "https://my-science-front.herokuapp.com/"
+    "APP_ENV": "prod"
   },
   "scripts": {
     "postdeploy": "node app.js"
