@@ -11,7 +11,6 @@ const app = express();
 /* Permitir a manipulação de dados em formato JSON */
 app.use(cors({
     origin: '*',
-    allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json());
