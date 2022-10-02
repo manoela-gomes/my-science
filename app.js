@@ -20,8 +20,11 @@ app.post("/dalle", GenerateImage.generateImage)
 
 app.post("/summarize",GenerateText.summarize)
     //return res.json({titulo: "Como criar API"});
+    
+    
+var port = process.env.PORT || 80
 
 /* Rodar o projeto na porta 8080 */
-app.listen(8080, () =>{
+app.listen(port, () =>{
     console.log("Servidor iniciado na porta 8080: http://localhost:8080/");
 });
