@@ -1,0 +1,10 @@
+{
+  "success_url": "/",
+  "env": {
+    "APP_ENV": "prod",
+    "CORS_ALLOW_ORIGIN": "/*"
+  },
+  "scripts": {
+    "postdeploy": "node app.js"
+  }
+}
