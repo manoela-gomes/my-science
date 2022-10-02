@@ -9,15 +9,14 @@ const GenerateText = require('./controllers/GenerateText.js');
 const app = express();
 
 /* Permitir a manipulação de dados em formato JSON */
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
 app.use(express.json());
 app.use(bodyParser.json());
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-})
 /* Criar a rota raiz */
 app.post("/dalle", GenerateImage.generateImage)
 
