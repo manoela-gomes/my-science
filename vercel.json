@@ -5,8 +5,8 @@
       { "src": "*.py", "use": "@vercel/python" },
       { "src": "app.js", "use": "@vercel/node" }
     ],
-    "routes":{
+    "routes":[{
         "src":"/(.*)",
         "dest":"/"
-    }
+    }]
   }
