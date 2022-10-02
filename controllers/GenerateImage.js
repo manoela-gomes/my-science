@@ -2,7 +2,7 @@ var { exec, spawn }  = require("child_process");
 
 exports.generateImage = (req, res, next) => {
    //exec("cd conda activate runML")
-   var process = spawn('python3',["dalle.py",
+   var process = spawn('python3',["python/dalle.py",
       req.body.age,
       req.body.gender,
       req.body.ethnicity,

@@ -2,7 +2,7 @@ var { exec, spawn }  = require("child_process");
 
 exports.summarize = (req, res, next) => {
    //exec("cd conda activate runML")
-   var process = spawn('python3',["text_summarize.py",
+   var process = spawn('python3',["python/text_summarize.py",
     req.body.age,
     req.body.gender,
     req.body.ethnicity,
