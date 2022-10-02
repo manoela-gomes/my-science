@@ -17,9 +17,9 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 /* Criar a rota raiz */
-app.post("/dalle", cors(),GenerateImage.generateImage)
+app.post("/dalle",GenerateImage.generateImage)
 
-app.post("/summarize",cors(),GenerateText.summarize)
+app.post("/summarize",GenerateText.summarize)
     //return res.json({titulo: "Como criar API"});
     
     
