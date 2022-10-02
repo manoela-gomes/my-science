@@ -1,7 +1,7 @@
 import openai
 import sys
 
-openai.api_key = "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"
+openai.api_key = "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"
 age= sys.argv[1]
 gender= sys.argv[2]
 ethnicity= sys.argv[3]
